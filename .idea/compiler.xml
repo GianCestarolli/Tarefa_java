@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SistemaBiblioteca" />
+        <module name="SistemaRestaurante" />
       </profile>
     </annotationProcessing>
   </component>

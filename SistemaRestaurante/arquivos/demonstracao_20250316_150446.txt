@@ -1,0 +1,3 @@
+Prato:Prato{nome='Lasanha', preco='50.0', descricao='Uma deliciosa lasanha'}
+Prato:Prato{nome='Frango a passarinho', preco='29.0', descricao='Frango maravilhoso e crocante'}
+Pedido:Pedido{numeroPedido='1', cliente='Professor Salatiel', listaDePratos='[Lasanha]', total='50.0'}
