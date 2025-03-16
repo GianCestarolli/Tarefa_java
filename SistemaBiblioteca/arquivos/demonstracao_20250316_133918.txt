@@ -1,0 +1,5 @@
+Livro:Livro{titulo='O Alquimista', autor='Paulo Coelho', ISBN='01'}
+Livro:Livro{titulo='O Senhor dos anéis', autor='JR Tolkien', ISBN='02'}
+Livro:Livro{titulo='A Arte da guerra', autor='Sun Tzu', ISBN='03'}
+Membro:Membro{nome='Professor Salatiel', id=1, email='professortiel@gmail.com'}
+Emprestimo:Emprestimo{livro=Livro{titulo='O Senhor dos anéis', autor='JR Tolkien', ISBN='02'}, membro=Membro{nome='Professor Salatiel', id=1, email='professortiel@gmail.com'}, dataEmprestimo=Sun Mar 16 13:39:07 BRT 2025}

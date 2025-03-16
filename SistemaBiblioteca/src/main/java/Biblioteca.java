@@ -48,15 +48,19 @@ public class Biblioteca {
     public void salvarDadosEmArquivo(String baseNomeArquivo) throws IOException {
         BufferedWriter writer = null;
         try {
-            File pasta = new File("arquivos");
+            // Cria a subpasta "arquivos" dentro de "SistemaBiblioteca"
+            File pasta = new File("SistemaBiblioteca/arquivos");
             if (!pasta.exists()) {
-                pasta.mkdir();
+                pasta.mkdirs(); // Garante a criação de todas as pastas necessárias
             }
 
+            // Define o nome do arquivo com data e hora
             String dataAtual = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            String nomeArquivo = "arquivos/" + baseNomeArquivo + "_" + dataAtual + ".txt";
+            String nomeArquivo = "SistemaBiblioteca/arquivos/" + baseNomeArquivo + "_" + dataAtual + ".txt";
 
             writer = new BufferedWriter(new FileWriter(nomeArquivo));
+
+            // Escreve os dados no arquivo
             for (Livro livro : livros) {
                 writer.write("Livro:" + livro + "\n");
             }
@@ -86,6 +90,7 @@ public class Biblioteca {
             }
         }
     }
+
 
 
 
